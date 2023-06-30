@@ -1,9 +1,10 @@
 let skills = [
-    {text: 'JavaScript', learned: true},
-    {text: 'HTML', learned: true},
-    {text: 'CSS', learned: true},
-    {text: 'Node.js', learned: false},
-  ];
+  {id: 1, text: 'JavaScript', learned: true},
+  {id: 2, text: 'HTML', learned: true},
+  {id: 3, text: 'CSS', learned: true},
+  {id: 4, text: 'Node.js', learned: false},
+];
+
 
   module.exports = {
     getAll,
@@ -15,5 +16,6 @@ let skills = [
   }
 
   function getOne(id) {
-    return skills[id];
-  }
+    id = parseInt(id);
+    return skills.find(skill => skill.id === id);
+}

@@ -10,7 +10,8 @@
     <ul>
       <% skills.forEach(function(skill, index) { %>
         <li>
-          <a href="/skills/<%= index %>">
+          <a href="/skills/<%= skill.id %>">
+
             <%= skill.text %>
           </a>
         </li>

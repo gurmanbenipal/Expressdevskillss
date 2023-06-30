@@ -11,7 +11,7 @@ function index(req, res) {
     });
 }
 function show(req, res) {
-    res.render('skills/show', {
+  res.render('skills/show', {
       skill: skills.getOne(req.params.id),
-    });
-  }
+  });
+}
